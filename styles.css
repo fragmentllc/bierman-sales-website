@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Bierman Inc</title>
+    <meta
+      name="description"
+      content="Contact Bierman Inc for agricultural equipment support, product information, and dealer inquiries."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="index.html" aria-label="Bierman Inc home">
+          <span class="brand-mark">B</span>
+          <span>
+            <strong>Bierman Inc</strong>
+            <small>Formerly Bierman Sales LLC</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Open navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="trade-shows.html">Trade Shows</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero compact-hero">
+        <div class="container">
+          <span class="eyebrow">Contact</span>
+          <h1>Let’s talk about the right agricultural solution for your business.</h1>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container contact-grid">
+          <div class="contact-card">
+            <h3>Reach us directly</h3>
+            <ul class="contact-list">
+              <li><strong>Location:</strong> 4320 C-Ave, Marcus, IA</li>
+              <li><strong>Email:</strong> <a href="mailto:sbierman@biermansales.com">sbierman@biermansales.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:">Call our team</a></li>
+            </ul>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="field-grid">
+              <label>
+                Name
+                <input type="text" name="name" placeholder="Your name" required />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="email" placeholder="your@email.com" required />
+              </label>
+            </div>
+
+            <label>
+              Company
+              <input type="text" name="company" placeholder="Your company" />
+            </label>
+
+            <label>
+              Message
+              <textarea name="message" placeholder="Tell us what you’re looking for" rows="6" required></textarea>
+            </label>
+
+            <button type="submit" class="button primary">Send message</button>
+            <p class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Bierman Inc</h3>
+          <p>Formerly Bierman Sales LLC</p>
+        </div>
+        <div>
+          <p>4320 C-Ave</p>
+          <p>Marcus, IA</p>
+        </div>
+        <div>
+          <p><a href="mailto:sbierman@biermansales.com">sbierman@biermansales.com</a></p>
+          <p><a href="tel:">Call our team</a></p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Bierman Inc. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
